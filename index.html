@@ -172,12 +172,10 @@ function ir(n) {
 }
 
 function fin() {
-  var f = document.getElementById("form");
-  if (f) f.style.display = "none";
-  var sm = document.getElementById("sm");
-  if (sm) sm.classList.add("a");
   gen();
-  window.scrollTo(0, 0);
+  var msg = encodeURIComponent(T);
+  var url = "https://wa.me/5561982437185?text=" + msg;
+  window.open(url, "_blank");
 }
 
 function novo() {
